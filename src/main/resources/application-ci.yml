@@ -1,4 +1,4 @@
-# Spring application properties for CI
+# CI application and infrastructure configuration
 spring:
   profiles:
     active: native
@@ -8,10 +8,10 @@ spring:
     config:
       server:
         native:
-          searchLocations: classpath:/config
+          search-locations: classpath:/config
 
-# Eureka configuration for CI
+# CI service discovery configuration
 eureka:
   client:
-    fetchRegistry: false
-    registerWithEureka: false
+    fetch-registry: false
+    register-with-eureka: false
